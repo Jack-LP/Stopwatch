@@ -55,9 +55,12 @@ body {
   color: #cde9e0;
 }
 
-.diamond {
-  height: auto;
-  width: 10rem;
+.diamond,
+.ff-container,
+.ff-responsive,
+.ff-image {
+  height: auto !important;
+  width: 15rem !important;
 }
 
 .time-display {
@@ -92,7 +95,7 @@ body {
   height: 6rem;
 }
 .controls button:nth-of-type(2) img {
-  padding-left: 0.4rem;
+  padding-left: 0.7rem;
   filter: invert(1);
   width: 3.5rem;
   height: 3.5rem;
@@ -107,8 +110,12 @@ body {
     font-size: 10rem;
   }
 
-  .diamond {
-    width: 15rem;
+  .diamond,
+.ff-container,
+.ff-responsive,
+.ff-image {
+    height: auto !important;
+    width: 20rem !important;
   }
 
   .controls {

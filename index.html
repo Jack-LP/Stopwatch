@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./signature.svg" type="image/x-icon" />
     <link rel="stylesheet" href="./scss/main.css" />
+    <script src="https://unpkg.com/freezeframe/dist/freezeframe.min.js"></script>
     <script src="./app.js" defer></script>
     <title>Stopwatch</title>
   </head>
@@ -13,7 +14,12 @@
     <div class="container">
       <div class="card">
         <div class="display">
-          <img id="diamond" class="diamond" src="./img/diamond.gif" alt="" />
+          <img
+            id="diamond"
+            class="diamond freezeframe"
+            src="./img/diamond.gif"
+            alt=""
+          />
           <p id="time-display" class="time-display">00:00:00</p>
         </div>
         <div class="controls">

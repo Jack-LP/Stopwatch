@@ -1,7 +1,10 @@
+const diamond = new Freezeframe('#diamond', {
+  trigger: false,
+});
+
 const startBtn = document.getElementById('start-btn');
 const stopBtn = document.getElementById('stop-btn');
 const resetBtn = document.getElementById('reset-btn');
-
 const timeDisplay = document.getElementById('time-display');
 
 let seconds = 0;
@@ -29,13 +32,14 @@ function startTimer() {
   if (interval) {
     return;
   }
-
+  diamond.start();
   interval = setInterval(timer, 1000);
 }
 
 function stopTimer() {
   clearInterval(interval);
   interval = null;
+  diamond.stop();
 }
 
 function resetTimer() {
