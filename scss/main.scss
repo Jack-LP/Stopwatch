@@ -22,4 +22,117 @@ body {
   font-size: 1.6rem;
   color: white;
   font-family: sans-serif;
+  background-image: linear-gradient(
+      0deg,
+      rgba(45, 45, 45, 0.568) 0%,
+      rgba(45, 45, 45, 0.164) 100%
+    ),
+    url(../img/bgImg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container {
+  width: min(90%, 70rem);
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #2d2d2d;
+  gap: 6rem;
+  width: 100%;
+  padding: 4rem;
+  border-radius: 2rem;
+  background-color: #2d2d2dc7;
+}
+
+.display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  color: #cde9e0;
+}
+
+.diamond {
+  height: auto;
+  width: 10rem;
+}
+
+.time-display {
+  font-family: $monoFont;
+  font-size: 5rem;
+}
+
+.controls {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  align-items: center;
+  button {
+    cursor: pointer;
+    height: 5rem;
+    width: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    border: none;
+    border-radius: 50%;
+    background-color: transparent;
+    filter: invert(1);
+    &:nth-of-type(2) {
+      filter: invert(0);
+      background-color: #12395f;
+      width: 6rem;
+      height: 6rem;
+      img {
+        padding-left: 0.4rem;
+        filter: invert(1);
+        width: 3.5rem;
+        height: 3.5rem;
+      }
+    }
+    img {
+      width: 3rem;
+      height: 3rem;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .time-display {
+    font-size: 10rem;
+  }
+  .diamond {
+    width: 15rem;
+  }
+  .controls {
+    gap: 6rem;
+    button {
+      height: 7rem;
+      width: 7rem;
+      &:nth-of-type(2) {
+        width: 8rem;
+        height: 8rem;
+        img {
+          width: 4.5rem;
+          height: 4.5rem;
+        }
+        img {
+          width: 4rem;
+          height: 4rem;
+        }
+      }
+    }
+  }
 }
